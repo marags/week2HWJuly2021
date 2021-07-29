@@ -1,0 +1,85 @@
+
+#window {
+    height: 700px;
+    width: 400px;
+    border: 1px solid;
+    margin: 0 auto;
+    text-align: center;
+}
+#slider {
+    border: 1px solid;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#css_carousel:hover, #js_carousel:hover {
+    animation-play-state: paused;
+}
+#slider, img {
+    height: 250px;
+    width: 250px;
+}
+
+#css_carousel, #js_carousel {
+    display: flex;
+}
+
+#css_carousel {
+    animation-name: move;
+    animation-duration: 30s;
+    animation-timing-function: linear; 
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    /* animation: 
+    name 
+    duration 
+    timing-function 
+    delay 
+    iteration-count 
+    direction 
+    fill-mode 
+    play-state; */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    8.33% {
+        transform: translateX(-250px);
+    }
+    16.66% {
+        transform: translateX(-500px);
+    }
+    24.99% {
+        transform: translateX(-750px);
+    }
+    33.32% {
+        transform: translateX(-1000px);
+    }
+    41.65% {
+        transform: translateX(-1250px);
+    }
+    49.98% {
+        transform: translateX(-1500px);
+    }
+    58.31% {
+        transform: translateX(-1750px);
+    }
+    66.64% {
+        transform: translateX(-2000px);
+    }
+    74.97% {
+        transform: translateX(-2250px);
+    }
+    83.3% {
+        transform: translateX(-2500px);
+    }
+    91.6% {
+        transform: translateX(-2750px);
+    }
+    99.93% {
+        transform: translateX(-3000px);
+    }
+}
