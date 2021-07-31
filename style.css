@@ -5,14 +5,17 @@
     margin: 0 auto;
     text-align: center;
 }
+
 #slider {
     border: 1px solid;
     margin: 0 auto;
     overflow: hidden;
 }
+
 #css_carousel:hover, #js_carousel:hover {
     animation-play-state: paused;
 }
+
 #slider, img {
     height: 250px;
     width: 250px;
@@ -23,27 +26,22 @@
 }
 
 #css_carousel {
-    animation-name: move;
-    animation-duration: 30s;
-    animation-timing-function: linear; 
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 40s ease-in 2s infinite alternate;
 }
+
 #buttons {
     display: flex;
     justify-content: space-between;
     position: relative;
     top: -50%;
     height: 10%;
-    opacity: .0;
+    opacity: 0;
 }
-#buttons:hover {
-    opacity: 0.6;
-}
-#button:hover {
+
+button:hover {
     background-color: tomato;
 }
+
 @keyframes move {
     0% {
         transform: translateX(0px);

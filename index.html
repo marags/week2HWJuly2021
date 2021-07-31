@@ -7,7 +7,7 @@
     <title>Carousel HW2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="setTimeout(auto_move, 5000)">
     
     <div id="window">
         <h1>Animated Carousel</h1>
@@ -30,11 +30,11 @@
         </div>
         
         <h1>JavaScript Carousel</h1>
-        <div id="slider">
-            <div id="js_carousel">
+        <div id="slider" onmouseover="show_buttons()" onmouseleave="hide_buttons()">
+            <div id="js_carousel" >
                 <img id="js_image" src="./images/spaceball1.png" alt="">
             </div>
-            <div id="buttons">
+            <div id="buttons" onmouseleave="hide_buttons()">
                 <button id="prev" onclick="picture_move (false)">&#60;</button>
                 <button id="next" onclick="picture_move (true)">&#62;</button>
             </div>
